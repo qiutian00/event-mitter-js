@@ -1,0 +1,9 @@
+/node_modules
+/dist
+/src/config/index copy.js
+/test/dist
+/test/test.js
+
+/coverage/*
+
+/.idea/*
