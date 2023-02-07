@@ -24,7 +24,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development rollup -c",
     "test": "tape test/index.js",
-    "pre-release": "npm run version && npm run build",
+    "pre-release": "npm run test && npm run version && npm run build",
     "release": "npm publish --registry https://registry.npmjs.org/",
     "build": "cross-env NODE_ENV=production && rimraf dist && rollup -c",
     "only-build": "cross-env NODE_ENV=production rollup -c",
