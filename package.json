@@ -61,7 +61,6 @@
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.4.1",
     "husky": "^8.0.3",
-    "jest": "^27.5.1",
     "lodash": "^4.17.21",
     "node-sass": "^7.0.3",
     "prettier": "^2.8.3",
@@ -75,9 +74,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.20.7",
-    "@babel/runtime-corejs3": "^7.20.7",
-    "dayjs": "^1.11.7",
-    "ua-parser-js": "^0.8.1"
+    "@babel/runtime-corejs3": "^7.20.7"
   },
   "license": "MIT"
 }
