@@ -1,5 +1,5 @@
-var Emitter = require('../index');
-var emitter = require('../instance');
+var Emitter = require('../src/index');
+var emitter = require('../src/instance');
 var test = require('tape');
 
 test('subscribes to an event', function (t) {
