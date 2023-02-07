@@ -13,7 +13,7 @@ import { terser } from 'rollup-plugin-terser'
 import cleaner from 'rollup-plugin-cleaner'
 
 // https://github.com/egoist/rollup-plugin-postcss
-import postcss from 'rollup-plugin-postcss'
+// import postcss from 'rollup-plugin-postcss'
 
 import pkg from './package.json'
 
@@ -89,12 +89,12 @@ const plugins = [
     exclude: 'node_modules/**',
     babelHelpers: 'runtime'
   }),
-  postcss({
-    extract:
-      process.env.CSS_STATUS === 'inline'
-        ? false
-        : resolve(`dist/css/${filename}.css`)
-  })
+  // postcss({
+  //   extract:
+  //     process.env.CSS_STATUS === 'inline'
+  //       ? false
+  //       : resolve(`dist/css/${filename}.css`)
+  // })
 ];
 
 if (!isDev) {
