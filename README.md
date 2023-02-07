@@ -1,4 +1,4 @@
-# mitter
+# event-mitter
 
 A tiny (less than 1k) event emitter library.
 
@@ -7,13 +7,13 @@ A tiny (less than 1k) event emitter library.
 ### npm
 
 ```
-npm install mitter --save
+npm install event-mitter --save
 ```
 
 ## Usage
 
 ```js
-var Emitter = require('mitter');
+var Emitter = require('event-mitter');
 var emitter = new Emitter();
 
 emitter.on('some-event', function (arg1, arg2, arg3) {
@@ -23,10 +23,10 @@ emitter.on('some-event', function (arg1, arg2, arg3) {
 emitter.emit('some-event', 'arg1 value', 'arg2 value', 'arg3 value');
 ```
 
-Alternatively, you can skip the initialization step by requiring `mitter/instance` instead. This pulls in an already initialized emitter.
+Alternatively, you can skip the initialization step by requiring `event-mitter/instance` instead. This pulls in an already initialized emitter.
 
 ```js
-var emitter = require('mitter/instance');
+var emitter = require('event-mitter/instance');
 
 emitter.on('some-event', function (arg1, arg2, arg3) {
  //
@@ -85,4 +85,4 @@ npm test
 
 ## License
 
-[MIT](https://github.com/qiutian00/mitter/blob/master/LICENSE)
+[MIT](https://github.com/qiutian00/event-mitter/blob/master/LICENSE)

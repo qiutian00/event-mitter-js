@@ -1,6 +1,6 @@
 function E () {
   // Keep this empty so it's easier to inherit from
-  // (via https://github.com/lipsmack from https://github.com/qiutian00/mitter/issues/3)
+  // (via https://github.com/lipsmack from https://github.com/qiutian00/event-mitter/issues/3)
 }
 
 E.prototype = {
@@ -53,7 +53,7 @@ E.prototype = {
 
     // Remove event from queue to prevent memory leak
     // Suggested by https://github.com/lazd
-    // Ref: https://github.com/qiutian00/mitter/commit/c6ebfaa9bc973b33d110a84a307742b7cf94c953#commitcomment-5024910
+    // Ref: https://github.com/qiutian00/event-mitter/commit/c6ebfaa9bc973b33d110a84a307742b7cf94c953#commitcomment-5024910
 
     (liveEvents.length)
       ? e[name] = liveEvents
