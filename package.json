@@ -1,5 +1,5 @@
 {
-  "name": "mitter",
+  "name": "mitter.js",
   "version": "0.0.1",
   "main": "dist/mitter.cjs.js",
   "browser": "dist/mitter.js",
