@@ -1,13 +1,13 @@
 {
-  "name": "event-mitter",
+  "name": "event-mitter-js",
   "version": "0.0.1",
-  "main": "dist/event-mitter.cjs.js",
-  "browser": "dist/event-mitter.js",
-  "module": "dist/event-mitter.esm.js",
-  "homepage": "https://github.com/qiutian00/event-mitter",
+  "main": "dist/event-mitter-js.cjs.js",
+  "browser": "dist/event-mitter-js.js",
+  "module": "dist/event-mitter-js.esm.js",
+  "homepage": "https://github.com/qiutian00/event-mitter-js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/qiutian00/event-mitter"
+    "url": "https://github.com/qiutian00/event-mitter-js"
   },
   "author": "qiutian00",
   "keywords": [
