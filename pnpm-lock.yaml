@@ -38,7 +38,6 @@ importers:
       rimraf: ^3.0.2
       rollup: ^2.79.1
       rollup-plugin-cleaner: ^1.0.0
-      rollup-plugin-postcss: ^3.1.8
       rollup-plugin-terser: ^7.0.2
       shelljs: ^0.8.5
       ua-parser-js: ^0.8.1
@@ -79,7 +78,6 @@ importers:
       rimraf: 3.0.2
       rollup: 2.79.1
       rollup-plugin-cleaner: 1.0.0_rollup@2.79.1
-      rollup-plugin-postcss: 3.1.8
       rollup-plugin-terser: 7.0.2_rollup@2.79.1
       shelljs: 0.8.5
 
@@ -2105,19 +2103,9 @@ packages:
       type-fest: 0.21.3
     dev: true
 
-  /ansi-regex/2.1.1:
-    resolution: {integrity: sha1-w7M6te42DYbg5ijwRorn7yfWVN8=}
-    engines: {node: '>=0.10.0'}
-    dev: true
-
   /ansi-regex/5.0.1:
     resolution: {integrity: sha1-CCyyyJyf6GWaMRpTvWpNxTAdswQ=}
     engines: {node: '>=8'}
-    dev: true
-
-  /ansi-styles/2.2.1:
-    resolution: {integrity: sha1-tDLdM1i2NM914eRmQ2gkBTPB3b4=}
-    engines: {node: '>=0.10.0'}
     dev: true
 
   /ansi-styles/3.2.1:
@@ -2381,10 +2369,6 @@ packages:
       tweetnacl: 0.14.5
     dev: true
 
-  /big.js/5.2.2:
-    resolution: {integrity: sha1-ZfCvOC9Xi83HQr2cKB6cstd2gyg=}
-    dev: true
-
   /boolbase/1.0.0:
     resolution: {integrity: sha1-aN/1++YMUes3cl6p4+0xDcwed24=}
     dev: true
@@ -2524,17 +2508,6 @@ packages:
 
   /caseless/0.12.0:
     resolution: {integrity: sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=}
-    dev: true
-
-  /chalk/1.1.3:
-    resolution: {integrity: sha1-qBFcVeSnAv5NFQq9OHKCKn4J/Jg=}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      ansi-styles: 2.2.1
-      escape-string-regexp: 1.0.5
-      has-ansi: 2.0.0
-      strip-ansi: 3.0.1
-      supports-color: 2.0.0
     dev: true
 
   /chalk/2.4.2:
@@ -2706,12 +2679,6 @@ packages:
 
   /concat-map/0.0.1:
     resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
-    dev: true
-
-  /concat-with-sourcemaps/1.1.0:
-    resolution: {integrity: sha1-1OqT8FriV5CVG5nns7CeOQikCC4=}
-    dependencies:
-      source-map: 0.6.1
     dev: true
 
   /console-control-strings/1.1.0:
@@ -2954,17 +2921,6 @@ packages:
       timsort: 0.3.0
     dev: true
 
-  /css-modules-loader-core/1.1.0:
-    resolution: {integrity: sha1-WQhmgpShvs0mGuCkziGwtVHyHRY=}
-    dependencies:
-      icss-replace-symbols: 1.1.0
-      postcss: 6.0.1
-      postcss-modules-extract-imports: 1.1.0
-      postcss-modules-local-by-default: 1.2.0
-      postcss-modules-scope: 1.1.0
-      postcss-modules-values: 1.3.0
-    dev: true
-
   /css-select-base-adapter/0.1.1:
     resolution: {integrity: sha1-Oy/0lyzDYquIVhUHqVQIoUMhNdc=}
     dev: true
@@ -2976,13 +2932,6 @@ packages:
       css-what: 3.4.2
       domutils: 1.7.0
       nth-check: 1.0.2
-    dev: true
-
-  /css-selector-tokenizer/0.7.3:
-    resolution: {integrity: sha1-c18mGG5nx0mq8nV4NAXPBmH66PE=}
-    dependencies:
-      cssesc: 3.0.0
-      fastparse: 1.1.2
     dev: true
 
   /css-tree/1.0.0-alpha.37:
@@ -3268,19 +3217,6 @@ packages:
     resolution: {integrity: sha1-6Bj9ac5cz8tARZT4QpY79TFkzDc=}
     dev: true
 
-  /emojis-list/3.0.0:
-    resolution: {integrity: sha1-VXBmIEatKeLpFucariYKvf9Pang=}
-    engines: {node: '>= 4'}
-    dev: true
-
-  /encoding/0.1.13:
-    resolution: {integrity: sha1-VldK/deR9UqOmyeFwFgqLSYhD6k=}
-    requiresBuild: true
-    dependencies:
-      iconv-lite: 0.6.3
-    dev: true
-    optional: true
-
   /end-of-stream/1.4.4:
     resolution: {integrity: sha1-WuZKX0UFe682JuwU2gyl5LJDHrA=}
     dependencies:
@@ -3397,7 +3333,7 @@ packages:
       esutils: 2.0.3
       optionator: 0.8.3
     optionalDependencies:
-      source-map: 0.6.1
+      source-map: registry.npmmirror.com/source-map/0.6.1
     dev: true
 
   /eslint-config-prettier/6.15.0_eslint@8.32.0:
@@ -3537,10 +3473,6 @@ packages:
     engines: {node: '>=4.0'}
     dev: true
 
-  /estree-walker/0.6.1:
-    resolution: {integrity: sha1-UwSRQ/QMbrkYsjZx0f4yGfOhs2I=}
-    dev: true
-
   /estree-walker/1.0.1:
     resolution: {integrity: sha1-MbxdYSyWtwQQa0d+bdXYqhOMtwA=}
     dev: true
@@ -3552,10 +3484,6 @@ packages:
   /esutils/2.0.3:
     resolution: {integrity: sha1-dNLrTeC42hKTcRkQ1Qd1ubcQ72Q=}
     engines: {node: '>=0.10.0'}
-    dev: true
-
-  /eventemitter3/4.0.7:
-    resolution: {integrity: sha1-Lem2j2Uo1WRO9cWVJqG0oHMGFp8=}
     dev: true
 
   /execa/4.1.0:
@@ -3626,10 +3554,6 @@ packages:
 
   /fast-levenshtein/2.0.6:
     resolution: {integrity: sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=}
-    dev: true
-
-  /fastparse/1.1.2:
-    resolution: {integrity: sha1-kXKMWllC7O2FMSg8eUQe5BIsNak=}
     dev: true
 
   /fastq/1.15.0:
@@ -3742,14 +3666,6 @@ packages:
     resolution: {integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=}
     dev: true
 
-  /fsevents/2.3.2:
-    resolution: {integrity: sha1-ilJveLj99GI7cJ4Ll1xSwkwC/Ro=}
-    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
   /function-bind/1.1.1:
     resolution: {integrity: sha1-pWiZ0+o8m6uHS7l3O3xe3pL0iV0=}
     dev: true
@@ -3802,12 +3718,6 @@ packages:
     engines: {node: '>= 4.0.0'}
     dependencies:
       globule: 1.3.4
-    dev: true
-
-  /generic-names/2.0.1:
-    resolution: {integrity: sha1-+KN46tLMqno08DF7BVVIMq5BuHI=}
-    dependencies:
-      loader-utils: 1.4.2
     dev: true
 
   /gensync/1.0.0-beta.2:
@@ -4008,7 +3918,7 @@ packages:
       source-map: 0.6.1
       wordwrap: 1.0.0
     optionalDependencies:
-      uglify-js: 3.17.4
+      uglify-js: registry.npmmirror.com/uglify-js/3.17.4
     dev: true
 
   /har-schema/2.0.0:
@@ -4030,20 +3940,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /has-ansi/2.0.0:
-    resolution: {integrity: sha1-NPUEnOHs3ysGSa8+8k5F7TVBbZE=}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      ansi-regex: 2.1.1
-    dev: true
-
   /has-bigints/1.0.2:
     resolution: {integrity: sha512-tSvCKtBr9lkF0Ex0aQiP9N+OpV4zi2r/Nee5VkRDbaqv35RLYMzbwQfFSZZH0kR+Rd6302UJZ2p/bJCEoR3VoQ==}
-    dev: true
-
-  /has-flag/1.0.0:
-    resolution: {integrity: sha1-nZ55MWXOAXoA8AQYxD+UKnsdEfo=}
-    engines: {node: '>=0.10.0'}
     dev: true
 
   /has-flag/3.0.0:
@@ -4195,27 +4093,9 @@ packages:
     dev: true
     optional: true
 
-  /icss-replace-symbols/1.1.0:
-    resolution: {integrity: sha1-Bupvg2ead0njhs/h/oEq5dsiPe0=}
-    dev: true
-
   /ignore/5.2.4:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
     engines: {node: '>= 4'}
-    dev: true
-
-  /import-cwd/2.1.0:
-    resolution: {integrity: sha1-qmzzbnInYShcs3HsZRn1PiQ1sKk=}
-    engines: {node: '>=4'}
-    dependencies:
-      import-from: 2.1.0
-    dev: true
-
-  /import-cwd/3.0.0:
-    resolution: {integrity: sha1-IIRVR3GAFRJuqbNna3WS+4vUz5I=}
-    engines: {node: '>=8'}
-    dependencies:
-      import-from: 3.0.0
     dev: true
 
   /import-fresh/2.0.0:
@@ -4232,20 +4112,6 @@ packages:
     dependencies:
       parent-module: 1.0.1
       resolve-from: 4.0.0
-    dev: true
-
-  /import-from/2.1.0:
-    resolution: {integrity: sha1-M1238qev/VOqpHHUuAId7ja387E=}
-    engines: {node: '>=4'}
-    dependencies:
-      resolve-from: 3.0.0
-    dev: true
-
-  /import-from/3.0.0:
-    resolution: {integrity: sha1-BVz+w4zVon2AV8pRN219O/CJGWY=}
-    engines: {node: '>=8'}
-    dependencies:
-      resolve-from: 5.0.0
     dev: true
 
   /import-local/3.1.0:
@@ -4758,7 +4624,7 @@ packages:
       micromatch: 4.0.5
       walker: 1.0.8
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: registry.npmmirror.com/fsevents/2.3.2
     dev: true
 
   /jest-jasmine2/27.5.1:
@@ -5155,13 +5021,6 @@ packages:
     resolution: {integrity: sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=}
     dev: true
 
-  /json5/1.0.2:
-    resolution: {integrity: sha512-g1MWMLBiz8FKi1e4w0UyVL3w+iJceWAFBAaBnnGKOpNa5f8TLktkbre1+s6oICydWAm+HRUGTmI+//xv2hvXYA==}
-    hasBin: true
-    dependencies:
-      minimist: 1.2.7
-    dev: true
-
   /json5/2.2.3:
     resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==}
     engines: {node: '>=6'}
@@ -5173,7 +5032,7 @@ packages:
     dependencies:
       universalify: 2.0.0
     optionalDependencies:
-      graceful-fs: 4.2.10
+      graceful-fs: registry.npmmirror.com/graceful-fs/4.2.10
     dev: true
 
   /jsonparse/1.3.1:
@@ -5236,15 +5095,6 @@ packages:
       strip-bom: 3.0.0
     dev: true
 
-  /loader-utils/1.4.2:
-    resolution: {integrity: sha512-I5d00Pd/jwMD2QCduo657+YM/6L3KZu++pmX9VFncxaxvHcru9jx1lBaFft+r4Mt2jK0Yhp41XlRAihzPxHNCg==}
-    engines: {node: '>=4.0.0'}
-    dependencies:
-      big.js: 5.2.2
-      emojis-list: 3.0.0
-      json5: 1.0.2
-    dev: true
-
   /locate-path/2.0.0:
     resolution: {integrity: sha1-K1aLJl7slExtnA3pw9u7ygNUzY4=}
     engines: {node: '>=4'}
@@ -5265,10 +5115,6 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       p-locate: 5.0.0
-    dev: true
-
-  /lodash.camelcase/4.3.0:
-    resolution: {integrity: sha1-soqmKIorn8ZRA1x3EfZathkDMaY=}
     dev: true
 
   /lodash.debounce/4.0.8:
@@ -5486,7 +5332,7 @@ packages:
       minipass-sized: 1.0.3
       minizlib: 2.1.2
     optionalDependencies:
-      encoding: 0.1.13
+      encoding: registry.npmmirror.com/encoding/0.1.13
     dev: true
 
   /minipass-flush/1.0.5:
@@ -5811,11 +5657,6 @@ packages:
       word-wrap: 1.2.3
     dev: true
 
-  /p-finally/1.0.0:
-    resolution: {integrity: sha1-P7z7FbiZpEEjs0ttzBi3JDNqLK4=}
-    engines: {node: '>=4'}
-    dev: true
-
   /p-limit/1.3.0:
     resolution: {integrity: sha1-uGvV8MJWkJEcdZD8v8IBDVSzzLg=}
     engines: {node: '>=4'}
@@ -5863,21 +5704,6 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       aggregate-error: 3.1.0
-    dev: true
-
-  /p-queue/6.6.2:
-    resolution: {integrity: sha1-IGip3PjmfdDsPnory3aBD6qF5CY=}
-    engines: {node: '>=8'}
-    dependencies:
-      eventemitter3: 4.0.7
-      p-timeout: 3.2.0
-    dev: true
-
-  /p-timeout/3.2.0:
-    resolution: {integrity: sha1-x+F6vJcdKnli74NiazXWNazyPf4=}
-    engines: {node: '>=8'}
-    dependencies:
-      p-finally: 1.0.0
     dev: true
 
   /p-try/1.0.0:
@@ -5982,11 +5808,6 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pify/5.0.0:
-    resolution: {integrity: sha1-H17KP16H6+wozG1UoOSq8ArMEn8=}
-    engines: {node: '>=10'}
-    dev: true
-
   /pirates/4.0.5:
     resolution: {integrity: sha512-8V9+HQPupnaXMA23c5hvl69zXvTwTzyAYasnkb0Tts4XvO4CliqONMOnvlq26rkhLC3nWDFBJf73LU1e1VZLaQ==}
     engines: {node: '>= 6'}
@@ -6054,14 +5875,6 @@ packages:
       postcss: 7.0.39
     dev: true
 
-  /postcss-load-config/2.1.2:
-    resolution: {integrity: sha1-xepQTyxK7zPHNZo03jVzdyrXUCo=}
-    engines: {node: '>= 4'}
-    dependencies:
-      cosmiconfig: 5.2.1
-      import-cwd: 2.1.0
-    dev: true
-
   /postcss-merge-longhand/4.0.11:
     resolution: {integrity: sha1-YvSaE+Sg7gTnuY9CuxYGLKJUniQ=}
     engines: {node: '>=6.9.0'}
@@ -6122,43 +5935,6 @@ packages:
       has: 1.0.3
       postcss: 7.0.39
       postcss-selector-parser: 3.1.2
-    dev: true
-
-  /postcss-modules-extract-imports/1.1.0:
-    resolution: {integrity: sha1-thTJcgvmgW6u41+zpfqh26agXds=}
-    dependencies:
-      postcss: 6.0.1
-    dev: true
-
-  /postcss-modules-local-by-default/1.2.0:
-    resolution: {integrity: sha1-99gMOYxaOT+nlkRmvRlQCn1hwGk=}
-    dependencies:
-      css-selector-tokenizer: 0.7.3
-      postcss: 6.0.1
-    dev: true
-
-  /postcss-modules-scope/1.1.0:
-    resolution: {integrity: sha1-1upkmUx5+XtipytCb75gVqGUu5A=}
-    dependencies:
-      css-selector-tokenizer: 0.7.3
-      postcss: 6.0.1
-    dev: true
-
-  /postcss-modules-values/1.3.0:
-    resolution: {integrity: sha1-7P+p1+GSUYOJ9CrQ6D9yrsRW6iA=}
-    dependencies:
-      icss-replace-symbols: 1.1.0
-      postcss: 6.0.1
-    dev: true
-
-  /postcss-modules/2.0.0:
-    resolution: {integrity: sha1-Rz0NcyZlHYQIWFwqFUEV1cs2zOA=}
-    dependencies:
-      css-modules-loader-core: 1.1.0
-      generic-names: 2.0.1
-      lodash.camelcase: 4.3.0
-      postcss: 7.0.39
-      string-hash: 1.1.3
     dev: true
 
   /postcss-normalize-charset/4.0.1:
@@ -6314,15 +6090,6 @@ packages:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
     dev: true
 
-  /postcss/6.0.1:
-    resolution: {integrity: sha1-AA29H47vIXqjaLmiEsX8QLKo8/I=}
-    engines: {node: '>=4.0.0'}
-    dependencies:
-      chalk: 1.1.3
-      source-map: 0.5.7
-      supports-color: 3.2.3
-    dev: true
-
   /postcss/7.0.39:
     resolution: {integrity: sha1-liQ3XZZWMOLh8sAqk1yCpZy0gwk=}
     engines: {node: '>=6.0.0'}
@@ -6398,11 +6165,6 @@ packages:
     dependencies:
       err-code: 2.0.3
       retry: 0.12.0
-    dev: true
-
-  /promise.series/0.2.0:
-    resolution: {integrity: sha1-LMfr6Vn8OmYZwEq029yeRS2GS70=}
-    engines: {node: '>=0.12'}
     dev: true
 
   /prompts/2.4.2:
@@ -6716,26 +6478,6 @@ packages:
       rollup: 2.79.1
     dev: true
 
-  /rollup-plugin-postcss/3.1.8:
-    resolution: {integrity: sha1-0byvjrD8sJNuNoTCLdhijROoL9E=}
-    engines: {node: '>=10'}
-    dependencies:
-      chalk: 4.1.2
-      concat-with-sourcemaps: 1.1.0
-      cssnano: 4.1.11
-      import-cwd: 3.0.0
-      p-queue: 6.6.2
-      pify: 5.0.0
-      postcss: 7.0.39
-      postcss-load-config: 2.1.2
-      postcss-modules: 2.0.0
-      promise.series: 0.2.0
-      resolve: 1.22.1
-      rollup-pluginutils: 2.8.2
-      safe-identifier: 0.4.2
-      style-inject: 0.3.0
-    dev: true
-
   /rollup-plugin-terser/7.0.2_rollup@2.79.1:
     resolution: {integrity: sha1-6Pu6SGmYGy3DWufopQLVxsBNMk0=}
     deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-terser
@@ -6749,18 +6491,12 @@ packages:
       terser: 5.16.1
     dev: true
 
-  /rollup-pluginutils/2.8.2:
-    resolution: {integrity: sha1-cvKvB0i1kjZNvTOJ5gDlqURKNR4=}
-    dependencies:
-      estree-walker: 0.6.1
-    dev: true
-
   /rollup/2.79.1:
     resolution: {integrity: sha512-uKxbd0IhMZOhjAiD5oAFp7BqvkA4Dv47qpOCtaNvng4HBwdbWtdOh8f5nZNuk2rp51PMGk3bzfWu5oayNEuYnw==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: registry.npmmirror.com/fsevents/2.3.2
     dev: true
 
   /run-parallel/1.2.0:
@@ -6775,10 +6511,6 @@ packages:
 
   /safe-buffer/5.2.1:
     resolution: {integrity: sha1-Hq+fqb2x/dTsdfWPnNtOa3gn7sY=}
-    dev: true
-
-  /safe-identifier/0.4.2:
-    resolution: {integrity: sha1-z2v8oxwol8WICS0XUNMO9QHVn8s=}
     dev: true
 
   /safe-regex-test/1.0.0:
@@ -6936,11 +6668,6 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /source-map/0.5.7:
-    resolution: {integrity: sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=}
-    engines: {node: '>=0.10.0'}
-    dev: true
-
   /source-map/0.6.1:
     resolution: {integrity: sha1-dHIq8y6WFOnCh6jQu95IteLxomM=}
     engines: {node: '>=0.10.0'}
@@ -7035,10 +6762,6 @@ packages:
       readable-stream: 2.3.7
     dev: true
 
-  /string-hash/1.1.3:
-    resolution: {integrity: sha1-6Kr8CsGFW0Zmkp7X3RJ1311sgRs=}
-    dev: true
-
   /string-length/4.0.2:
     resolution: {integrity: sha1-qKjce9XBqCubPIuH4SX2aHG25Xo=}
     engines: {node: '>=10'}
@@ -7084,13 +6807,6 @@ packages:
       safe-buffer: 5.2.1
     dev: true
 
-  /strip-ansi/3.0.1:
-    resolution: {integrity: sha1-ajhfuIU9lS1f8F0Oiq+UJ43GPc8=}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      ansi-regex: 2.1.1
-    dev: true
-
   /strip-ansi/6.0.1:
     resolution: {integrity: sha1-nibGPTD1NEPpSJSVshBdN7Z6hdk=}
     engines: {node: '>=8'}
@@ -7125,10 +6841,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /style-inject/0.3.0:
-    resolution: {integrity: sha1-0hxHev/skYEcyCNVgypwDSK/jdM=}
-    dev: true
-
   /stylehacks/4.0.3:
     resolution: {integrity: sha1-Zxj8r00eB9ihMYaQiB6NlnJqcdU=}
     engines: {node: '>=6.9.0'}
@@ -7136,18 +6848,6 @@ packages:
       browserslist: 4.21.4
       postcss: 7.0.39
       postcss-selector-parser: 3.1.2
-    dev: true
-
-  /supports-color/2.0.0:
-    resolution: {integrity: sha1-U10EXOa2Nj+kARcIRimZXp3zJMc=}
-    engines: {node: '>=0.8.0'}
-    dev: true
-
-  /supports-color/3.2.3:
-    resolution: {integrity: sha1-ZawFBLOVQXHYpklGsq48u4pfVPY=}
-    engines: {node: '>=0.8.0'}
-    dependencies:
-      has-flag: 1.0.0
     dev: true
 
   /supports-color/5.5.0:
@@ -7419,14 +7119,6 @@ packages:
   /ua-parser-js/0.8.1:
     resolution: {integrity: sha1-qj/qUlZcXjbNhK1aR0l+jyq63Jo=}
     dev: false
-
-  /uglify-js/3.17.4:
-    resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==}
-    engines: {node: '>=0.8.0'}
-    hasBin: true
-    requiresBuild: true
-    dev: true
-    optional: true
 
   /unbox-primitive/1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
@@ -7813,3 +7505,50 @@ packages:
     resolution: {integrity: sha1-ApTrPe4FAo0x7hpfosVWpqrxChs=}
     engines: {node: '>=10'}
     dev: true
+
+  registry.npmmirror.com/encoding/0.1.13:
+    resolution: {integrity: sha512-ETBauow1T35Y/WZMkio9jiM0Z5xjHHmJ4XmjZOq1l/dXz3lr2sRn87nJy20RupqSh1F2m3HHPSp8ShIPQJrJ3A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/encoding/-/encoding-0.1.13.tgz}
+    name: encoding
+    version: 0.1.13
+    requiresBuild: true
+    dependencies:
+      iconv-lite: 0.6.3
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/fsevents/2.3.2:
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/fsevents/-/fsevents-2.3.2.tgz}
+    name: fsevents
+    version: 2.3.2
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/graceful-fs/4.2.10:
+    resolution: {integrity: sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/graceful-fs/-/graceful-fs-4.2.10.tgz}
+    name: graceful-fs
+    version: 4.2.10
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/source-map/0.6.1:
+    resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/source-map/-/source-map-0.6.1.tgz}
+    name: source-map
+    version: 0.6.1
+    engines: {node: '>=0.10.0'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  registry.npmmirror.com/uglify-js/3.17.4:
+    resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/uglify-js/-/uglify-js-3.17.4.tgz}
+    name: uglify-js
+    version: 3.17.4
+    engines: {node: '>=0.8.0'}
+    hasBin: true
+    requiresBuild: true
+    dev: true
+    optional: true
