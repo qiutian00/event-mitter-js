@@ -1,4 +1,4 @@
-# event-mitter-js
+# event-mitter-js [![npm](https://img.shields.io/npm/v/event-mitter-js.svg)](https://npmjs.com/package/event-mitter-js) [![jsdelivr](https://data.jsdelivr.com/v1/package/npm/event-mitter-js/badge)](https://www.jsdelivr.com/package/npm/event-mitter-js)
 
 A tiny (less than 1k) event emitter library.
 
