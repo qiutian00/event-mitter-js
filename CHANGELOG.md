@@ -1,4 +1,13 @@
-## 0.0.1 (2023-02-07)
+## [0.0.2](https://github.com/qiutian00/event-mitter-js/compare/v0.0.1...v0.0.2) (2023-02-12)
+
+
+### Bug Fixes
+
+* use es6 grammar defined variables ([19cb679](https://github.com/qiutian00/event-mitter-js/commit/19cb679d7e64bdfd8f2c2bb7e889fb4c42a0f5a3))
+
+
+
+## [0.0.1](https://github.com/qiutian00/event-mitter-js/compare/55e3d47b4b8d6dfb6c85f3cabf6e2798423195ac...v0.0.1) (2023-02-07)
 
 
 ### Bug Fixes
