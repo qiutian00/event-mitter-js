@@ -13,8 +13,8 @@ npm install event-mitter-js --save
 ## Usage
 
 ```js
-var Emitter = require('event-mitter-js');
-var emitter = new Emitter();
+const Emitter = require('event-mitter-js');
+const emitter = new Emitter();
 
 emitter.on('some-event', function (arg1, arg2, arg3) {
  //
@@ -26,7 +26,7 @@ emitter.emit('some-event', 'arg1 value', 'arg2 value', 'arg3 value');
 Alternatively, you can skip the initialization step by requiring `event-mitter-js/instance` instead. This pulls in an already initialized emitter.
 
 ```js
-var emitter = require('event-mitter-js/instance');
+const emitter = require('event-mitter-js/instance');
 
 emitter.on('some-event', function (arg1, arg2, arg3) {
  //

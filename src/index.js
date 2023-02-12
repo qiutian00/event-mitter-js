@@ -5,7 +5,7 @@ function E () {
 
 E.prototype = {
   on: function (name, callback, ctx) {
-    var e = this.e || (this.e = {});
+    const e = this.e || (this.e = {});
 
     (e[name] || (e[name] = [])).push({
       fn: callback,
@@ -16,7 +16,7 @@ E.prototype = {
   },
 
   once: function (name, callback, ctx) {
-    var self = this;
+    const self = this;
     function listener () {
       self.off(name, listener);
       callback.apply(ctx, arguments);
@@ -27,10 +27,10 @@ E.prototype = {
   },
 
   emit: function (name) {
-    var data = [].slice.call(arguments, 1);
-    var evtArr = ((this.e || (this.e = {}))[name] || []).slice();
-    var i = 0;
-    var len = evtArr.length;
+    const data = [].slice.call(arguments, 1);
+    const evtArr = ((this.e || (this.e = {}))[name] || []).slice();
+    let i = 0;
+    const len = evtArr.length;
 
     for (i; i < len; i++) {
       evtArr[i].fn.apply(evtArr[i].ctx, data);
@@ -40,12 +40,12 @@ E.prototype = {
   },
 
   off: function (name, callback) {
-    var e = this.e || (this.e = {});
-    var evts = e[name];
-    var liveEvents = [];
+    const e = this.e || (this.e = {});
+    const evts = e[name];
+    const liveEvents = [];
 
     if (evts && callback) {
-      for (var i = 0, len = evts.length; i < len; i++) {
+      for (let i = 0, len = evts.length; i < len; i++) {
         if (evts[i].fn !== callback && evts[i].fn._ !== callback)
           liveEvents.push(evts[i]);
       }
